@@ -11,6 +11,7 @@ import card8 from "../images/card8.png";
 import card9 from "../images/card9.png";
 import { BsSearch } from "react-icons/bs";
 import Card from "../components/Card.js";
+import Navbar from "../components/Navbar.js";
 
 function Gallery() {
 	const [search, setSearch] = React.useState("");
@@ -116,10 +117,8 @@ function Gallery() {
 	}
 	return (
 		<div>
-			<header className="mx-32 my-8">
-				<h1 className="font-bold text-3xl">GC</h1>
-			</header>
-			<main className="mx-32 border-b-4 pb-16">
+			<Navbar></Navbar>
+			<main className="mx-32 border-b-4 pb-16 mt-16">
 				<img alt="main-event-img" src={gallerymain} className="w-full"></img>
 				<div className="w-2/4 mt-12 flex flex-row justify-between">
 					<div className="relative flex items-center w-3/4 rounded">
@@ -161,7 +160,7 @@ function Gallery() {
 			</section>
 			<section className="mx-32 border-b-4 pb-16">
 				<h2 className="font-bold text-2xl mt-6 border-b-4 pb-6">Past Events</h2>
-				<div className="flex justify-between mt-8">{featuredEventsArr}</div>
+				<div className="flex justify-between mt-8">{pastEventsArr}</div>
 			</section>
 		</div>
 	);

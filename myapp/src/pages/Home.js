@@ -1,9 +1,11 @@
 import React from "react";
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
+import Navbar from "../components/Navbar";
 function Home() {
 	return (
 		<div className="w-screen min-h-screen">
+			<Navbar></Navbar>
 			<div className="h-screen w-screen">{"LANDING PAGE"}</div>
 			<div className="h-[50vh] w-screen flex flex-col gap-10 justify-center items-center custom-shadow">
 				<p className="text-[1.3rem]">Join 10,000+ Students</p>
