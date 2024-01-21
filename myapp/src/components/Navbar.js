@@ -23,7 +23,7 @@ function Navbar() {
 							className="mx-4 text-xl font-bold
 					"
 						>
-							<Link to="/">About us</Link>
+							<Link to="/ambassador">Program</Link>
 						</li>
 						<li
 							className="mx-4 text-xl font-bold
