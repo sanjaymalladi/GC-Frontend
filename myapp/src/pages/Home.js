@@ -1,6 +1,8 @@
 import React from "react";
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
+import welcome from "../images/welcome.png"
+import Low from "../images/Low.png"
 import Navbar from "../components/Navbar";
 import Instagram from "../components/Instagram";
 function Home() {
@@ -21,7 +23,9 @@ function Home() {
 					<div className="w-[300px] h-[600px] bg-neutral-50"></div>
 				</div>
 				<div>
-					<div className="bg-violet-300 h-[250px] w-[250px]"></div>
+					<div>
+					<img src={welcome} alt="welcome" className="" />
+					</div>
 				</div>
 			</div>
 			<div className="h-[50vh] w-screen flex flex-col gap-10 justify-center items-center custom-shadow">
@@ -60,7 +64,9 @@ function Home() {
 					</button>
 				</div>
 				<div>
-					<div className="bg-white h-[80vh] w-[30vw]"></div>
+					<div>
+						<img src={Low} alt="Experience" className="" />
+					</div>
 				</div>
 			</div>
 		</div>
