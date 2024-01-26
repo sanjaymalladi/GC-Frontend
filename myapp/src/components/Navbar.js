@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../images/logo.png"
 
 function Navbar() {
 	return (
@@ -7,14 +8,13 @@ function Navbar() {
 			<nav className="py-12 shadow-md px-36 sticky top-0 z-10">
 				<ul className="flex justify-between items-center">
 					<div className="flex items-center">
-						<li className="text-2xl font-bold mr-16">
-							<Link to="/">GC</Link>
-						</li>
-						<li
-							className="mx-4 text-xl font-bold
-					"
-						>
-							<Link to="/">Home</Link>
+					<li>
+						<img
+							src={logo}
+							alt="welcome"
+							className=""
+							style={{ width: '100px', height: 'auto', borderRadius: '50%' }}
+						/>
 						</li>
 						<li className="mx-4 text-xl font-bold">
 							<Link to="/gallery">Gallery</Link>
