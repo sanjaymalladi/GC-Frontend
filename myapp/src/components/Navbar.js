@@ -17,6 +17,9 @@ function Navbar() {
 						/>
 						</li>
 						<li className="mx-4 text-xl font-bold">
+							<Link to="/">Home</Link>
+						</li>
+						<li className="mx-4 text-xl font-bold">
 							<Link to="/gallery">Gallery</Link>
 						</li>
 						<li
